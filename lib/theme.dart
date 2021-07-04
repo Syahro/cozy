@@ -9,6 +9,8 @@ Color darkGreyColor = Color(0XFF82868E);
 Color lightGreyColor = Color(0XFFF6F7F8);
 Color greyColor = Color(0XFF989BA1);
 
+double edge = 24;
+
 TextStyle blackTextStyle = GoogleFonts.poppins(
   fontWeight: FontWeight.w500,
   color: blackColor,

@@ -40,6 +40,103 @@ class DetailPage extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              ListView(
+                children: [
+                  SizedBox(
+                    height: 328,
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(20),
+                      ),
+                      color: whiteColor,
+                    ),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: 30,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: edge,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Kuretakeso Hott',
+                                    style: blackTextStyle.copyWith(
+                                      fontSize: 22,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 2,
+                                  ),
+                                  Text.rich(TextSpan(
+                                      text: '\$52',
+                                      style: purpleTextStyle.copyWith(
+                                        fontSize: 16,
+                                      ),
+                                      children: [
+                                        TextSpan(
+                                          text: ' / month',
+                                          style: greyTextStyle.copyWith(
+                                            fontSize: 16,
+                                          ),
+                                        )
+                                      ]))
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    'assets/Icon_star.png',
+                                    width: 20,
+                                  ),
+                                  SizedBox(
+                                    width: 2,
+                                  ),
+                                  Image.asset(
+                                    'assets/Icon_star.png',
+                                    width: 20,
+                                  ),
+                                  SizedBox(
+                                    width: 2,
+                                  ),
+                                  Image.asset(
+                                    'assets/Icon_star.png',
+                                    width: 20,
+                                  ),
+                                  SizedBox(
+                                    width: 2,
+                                  ),
+                                  Image.asset(
+                                    'assets/Icon_star.png',
+                                    width: 20,
+                                  ),
+                                  SizedBox(
+                                    width: 2,
+                                  ),
+                                  Image.asset(
+                                    'assets/Icon_star.png',
+                                    width: 20,
+                                    color: greyColor,
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
               )
             ],
           )),

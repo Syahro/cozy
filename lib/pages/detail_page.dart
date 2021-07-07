@@ -1,19 +1,26 @@
+import 'package:cozy/pages/error_page.dart';
 import 'package:cozy/theme.dart';
 import 'package:cozy/widget/facility_item.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DetailPage extends StatelessWidget {
-  launchUrl(String url) async {
-    if (await canLaunch(url)) {
-      launch(url);
-    } else {
-      throw (url);
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
+    launchUrl(String url) async {
+      if (await canLaunch(url)) {
+        launch(url);
+      } else {
+        // throw (url);
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ErrorPage(),
+          ),
+        );
+      }
+    }
+
     return Scaffold(
       backgroundColor: whiteColor,
       body: SafeArea(
@@ -213,6 +220,9 @@ class DetailPage extends StatelessWidget {
                                 fit: BoxFit.cover,
                               ),
                             ),
+                            SizedBox(
+                              width: 18,
+                            ),
                           ],
                         ),
                       ),
@@ -245,8 +255,9 @@ class DetailPage extends StatelessWidget {
                                 ),
                                 InkWell(
                                   onTap: () {
-                                    launchUrl(
-                                        'https://goo.gl/maps/SyZx2yjWB1yR6AeH8');
+                                    // launchUrl(
+                                    //     'https://goo.gl/maps/SyZx2yjWB1yR6AeH8');
+                                    launchUrl('qwertuippop');
                                   },
                                   child: Image.asset(
                                     'assets/btn_map.png',

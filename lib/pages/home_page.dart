@@ -1,16 +1,21 @@
 import 'package:cozy/model/city.dart';
 import 'package:cozy/model/space.dart';
 import 'package:cozy/model/tips.dart';
+import 'package:cozy/providers/space_provider.dart';
 import 'package:cozy/theme.dart';
 import 'package:cozy/widget/bottom_navbar_item.dart';
 import 'package:cozy/widget/city_card.dart';
 import 'package:cozy/widget/space_card.dart';
 import 'package:cozy/widget/tips_card.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var spaceProvider = Provider.of<SpaceProvider>(context);
+    spaceProvider.getRecommendedSpace();
+
     return Scaffold(
       backgroundColor: whiteColor,
       body: SafeArea(

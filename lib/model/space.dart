@@ -6,6 +6,13 @@ class Space {
   String city;
   String country;
   int rating;
+  String address;
+  String phone;
+  String mapUrl;
+  List photos;
+  int numberOfKitchen;
+  int numberOfBedrooms;
+  int numberOfCupboards;
 
   Space({
     this.id,
@@ -15,5 +22,28 @@ class Space {
     this.city,
     this.country,
     this.rating,
+    this.address,
+    this.phone,
+    this.mapUrl,
+    this.photos,
+    this.numberOfKitchen,
+    this.numberOfBedrooms,
+    this.numberOfCupboards,
   });
+
+  Space.fromJson(json) {
+    id = json['id'];
+    name = json['name'];
+    imageUrl = json['image_url'];
+    price = json['price'];
+    city = json['city'];
+    country = json['country'];
+    rating = json['rating'];
+    address = json['address'];
+    mapUrl = json['map_url'];
+    phone = json['phone'];
+    numberOfKitchen = json['number_of_kitchen'];
+    numberOfBedrooms = json['number_of_bedrooms'];
+    numberOfCupboards = json['number_of_cupboards'];
+  }
 }

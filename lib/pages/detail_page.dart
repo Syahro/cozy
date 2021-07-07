@@ -255,9 +255,8 @@ class DetailPage extends StatelessWidget {
                                 ),
                                 InkWell(
                                   onTap: () {
-                                    // launchUrl(
-                                    //     'https://goo.gl/maps/SyZx2yjWB1yR6AeH8');
-                                    launchUrl('qwertuippop');
+                                    launchUrl(
+                                        'https://goo.gl/maps/SyZx2yjWB1yR6AeH8');
                                   },
                                   child: Image.asset(
                                     'assets/btn_map.png',

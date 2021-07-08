@@ -2,7 +2,7 @@
     package="com.example.cozy">
    <application
         android:label="cozy"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

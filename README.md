@@ -1,16 +1,25 @@
 # cozy
 
-A new Flutter project.
+A new Cozy App Flutter project.
+
+design view Code by bwa.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application. I Just implement that include in bwa course video on they website for my practice.
 
-A few resources to get you started if this is your first Flutter project:
+Big Thank's to bwa who make a video and course that i use for my practice.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Development Setup
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone the repository and run the following commands:
+```
+flutter pub get
+flutter run
+```
+
+## Screenshot
+
+Here is some UI View.
+
+<img src="assets/screenshot/one.png" height="470em" />   <img src="assets/screenshot/two.png" height="470em" />   <img src="assets/screenshot/three.png" height="470em" />   <img src="assets/screenshot/four.png" height="470em" />   <img src="assets/screenshot/five.png" height="470em" />   <img src="assets/screenshot/six.png" height="470em" />
